@@ -10,3 +10,4 @@ webserver_config.py
 airflow.cfg
 airflow.db
 include/gcp/server_acct.json
+include/key/*.json
