@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "airflow-dataonline",
+  "private_key_id": "f820c1ad1312647644c7b077bd8f85f6edeb5dd4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2APT5SQglQj72\nhS2bPf8zHySYVvl08Tq/Sv/6QknIJPSn0QgN9+jNWweMW4zJ0ndneHMLIKIlYK2c\ncuohP3YzyE1ADuU99gLkbs0zpmrdkEW6v6PGcEyn+NP01xV9okTkWVVdqR3wYsJK\ncqRIMdcK58n4MFn/g5oTIRr0nbv9vaxuZeiIq8WnLqyv2nn/KmDabJMH0X7N+88i\ntY9DlVmUXuGvyKsMpdC3svfQvoTZp9+lBOrgDu3AskPFP4tMayUljJKS0oMHNNAK\n4rBu+cZCjVYI2tCD2cuo4eG4kGzMpegNFPnEx3QwenH+f1oe9Q/7mglSGgWUdPV+\nQp6leHT5AgMBAAECggEAEBncEiybj55BbzIfc38j0zwzUtXI6kdH9PHX3OYd3Fqm\nmS0FGyU+H2Ko84oK1bTskscFWGvp5Egd+7vvygKw/IpBCUR4E8fugBJsTWAwzoqL\nnKaFANJg+bAp4hxf/pYLJa9gfbFvIFvAR/FF5swf88tHIxF1+MSF7iDM32yP27XU\nQlTZLuYC6VYWcE22ea8L8BpSDtZfTvvIMduC8z/kYtpmjgCpAVZHrX0Vv6C8H9l+\novz0l6iCiWZhcpQjZk3P2RxEVC6cA3dGaJXYSMuw8/jfQ44gXaTfO4X7iaTU4Nml\n/ZPFHU63wLI/1jHqTnsxYsQjOrVjDL+OIR8c60WBvQKBgQDv6Pe1w5/baXHtwHys\nb6/3ZmY+X6CW4xt5bzY5UqdbRgTHo9u+Skga0WFpNTQ0nDmyI4ilmCTeD1xrliqO\nxMCxUIGFhWrFo6PyFq9wJwddsvXF4q6HRdfzbNVXRg2PDlsi4Th16fZHzYhXZfUK\nge+nFJYP7JYCmbma2M+zm3DeFQKBgQDCNcrEzTqNF3zt/K77E+5siZgXKgKPCirO\nMbSeBhY+6omu0f7fn4xZQvSRK5Mnx3cCZnKKu1eXIZ0/+7QqmOYniSKy3i8iqpDF\n8JF71wsipStlFD1mUUJkzovFWwmauA3SOGD+bP/z+J7IJlgbS0/tZDdWeJ5fMPjB\n0VyHm2nYVQKBgCV0wffm6vZeqCLugoiJh3egzSW/2Fq2anuzGUwp02c0r1pcAtra\nzhchyYubeuMb4QYm9hakgl0JGOzTLSHNJiiI4S/vfJQO0HHjiNCBx2yhnC2hDo6g\nIO8odsaBcWx8WU5Ay4fdV04ukLLUgEV7s+bqF+O0lFcjmQ7L+uGXyy9hAoGARpBM\n8FyxHXqfRck9urRvOLh1rlTxQQ+speahfZkwlAObqw1Z0d6im/wb6HMwsI9kylZ2\n37laBeuMuya1O5T6avsExIC+F5Zpq8HQ2nIz9Y6VydAkzvxPZ1k0p6yAPNsLCoq5\nkzf/d6Gp74cfFCu1CsgS4zRINsYQXDu5pvvs5VECgYAFXBxl8OjAlR5QRscvjv6H\nQAGsWDRdqr4fRdpBN8pD+yVIQDCYoXBnKffTXRRtlViH/kr9qcrkRDi6mmYZ7ie1\ni6FZJyx9beA4XmxRvjY69O2s+Md+2QBm/6bhKsBSFY+R3097Y1BecIXfuL1lKHc/\nCaZvJU9/4uMA4XaU+lYO1Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ariflow-online-retail@airflow-dataonline.iam.gserviceaccount.com",
+  "client_id": "118400227298366056187",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ariflow-online-retail%40airflow-dataonline.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

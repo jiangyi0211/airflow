@@ -1,0 +1,14 @@
+# profiles.yml
+
+retail:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: /usr/local/airflow/include/key/airflow-dataonline-f820c1ad1312.json
+    project: airflow-dataonline
+    dataset: retail
+    threads: 1
+    timeout_seconds: 300
+    location: US

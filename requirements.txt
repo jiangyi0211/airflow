@@ -1,0 +1,11 @@
+# Astro Runtime includes the following pre-installed providers packages: https://www.astronomer.io/docs/astro/runtime-image-architecture#provider-packages
+# apache-airflow-providers-google>=10.3.0
+# soda-core>=3.5,<4.0
+# soda-core-bigquery>=3.0.45
+# google-cloud-bigquery-storage>=2.24.0
+# opentelemetry-api>=1.24.0
+# opentelemetry-instrumentation>=0.43b
+
+
+astronomer-cosmos[dbt-bigquery]==1.0.3
+protobuf==3.20.0
