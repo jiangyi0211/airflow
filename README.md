@@ -1,41 +1,17 @@
-Overview
-========
-
-Data Engineer Project: An end-to-end Airflow data pipeline with BigQuery, dbt Soda
-
-
-
-Project Contents
-================
-
-Your Astro project contains the following files and folders:
-
-- dags: This folder contains the Python files for your Airflow DAGs. 
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
-
-Deploy Your Project Locally
-===========================
-
-1. Start Airflow on your local machine by running 'astro dev start'.
-
-This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
-
-- Postgres: Airflow's Metadata Database
-- Webserver: The Airflow component responsible for rendering the Airflow UI
-- Scheduler: The Airflow component responsible for monitoring and triggering tasks
-- Triggerer: The Airflow component responsible for triggering deferred tasks
-
-2. Verify that all 4 Docker containers were created by running 'docker ps'.
-
-Note: Running 'astro dev start' will start your project with the Airflow Webserver exposed at port 8080 and Postgres exposed at port 5432. If you already have either of those ports allocated, you can either [stop your existing Docker containers or change the port](https://www.astronomer.io/docs/astro/cli/troubleshoot-locally#ports-are-not-available-for-my-local-airflow-webserver).
-
-3. Access the Airflow UI for your local Airflow project. To do so, go to http://localhost:8080/ and log in with 'admin' for both your Username and Password.
-
-You should also be able to access your Postgres Database at 'localhost:5432/postgres'.
-
-
+This project leverages Kaggle’s Online Retail dataset and a tech stack to build an end-to-end automated retail data pipeline, focusing on data reliability and business value extraction.
+Core Objectives
+Automate data processing (loading, transformation, validation) to eliminate manual inefficiencies and errors.
+Establish full-cycle data quality checks to ensure reliable, actionable data.
+Unlock data value for retail use cases: customer behavior analysis, product sales trend tracking, and revenue structure optimization.
+Key Tech Stack
+Orchestration: Apache Airflow (via Astro CLI + Docker) – Automates task scheduling (data loading, transformation, validation) with DAGs for dependency management.
+Storage & Computing: Google Cloud (GCS + BigQuery) – GCS stores raw/intermediate data; BigQuery (serverless warehouse) hosts structured models (dimensions/facts) and enables fast SQL analytics.
+Data Transformation: dbt (via Astronomer Cosmos) – Converts raw data into analysis-ready models (e.g., dim_customer, fct_invoices) aligned with retail business logic.
+Quality Assurance: Soda Core – Validates data across the pipeline (schema integrity, uniqueness, business rules like non-negative revenue) via custom checks integrated with Airflow.
+Auxiliary Tools: Docker (environment consistency); Python (pandas for cleaning, SQL for querying).
+Workflow
+Data Ingestion: Raw dataset from Kaggle is stored in GCS.
+Data Loading: Airflow syncs GCS data to BigQuery’s raw table.
+Transformation: dbt builds structured models in BigQuery.
+Quality Checks: Soda Core validates data at each stage; alerts on issues.
+Value Output: dbt generates business reports (e.g., top 10 revenue countries, best-selling products) to support retail decision-making.
