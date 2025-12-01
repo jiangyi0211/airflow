@@ -7,3 +7,7 @@ logs/
 airflow.db
 airflow.cfg
 include/gcp/server_acct.json
+# dbt
+target/
+dbt_packages/
+*.log
